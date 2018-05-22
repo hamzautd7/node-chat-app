@@ -7,7 +7,7 @@ const publicPath= path.join(__dirname, '../public');
 const port = process.env.PORT || 3000;
 var app = express();
 
-const server = app.listen(3000, ()=>{
+const server = app.listen(port, ()=>{
     console.log('Server is up');
 });
 const io = socketIO(server);
